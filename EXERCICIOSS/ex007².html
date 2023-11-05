@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+background-color: black;
+color: white;
+padding: 150px;
+text-align: center;
+display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <!--- BOTAO FUNCTION ONCLICK-->
+    <h1 id="click" onmouseenter="entrar()" onmouseout="sair()" onclick="clicar()">BOTAO</h1>
+    <script>
+        // function clicar
+function clicar() {
+
+        // conectar o o botao com a function
+    let botao = document.querySelector("h1#click")
+       // resultado da açao da function no botao
+    botao.innerText = "macaco"
+}
+function sair() {
+        let sair = document.querySelector("h1#click")
+            sair.innerText ="BOTAO"
+
+    }
+    </script>
+</body>
+</html>

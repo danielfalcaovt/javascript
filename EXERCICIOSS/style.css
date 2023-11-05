@@ -1,0 +1,17 @@
+
+div#head {
+background: white;
+border-radius: 35px;
+box-shadow:inset;
+margin: 25px;
+padding: 50px;
+text-align: center;
+font: 10pt arial;
+position: relative;
+display:inline-block
+
+}
+body{
+
+    background-color: rgb(255, 255, 135);
+}

@@ -1,0 +1,1 @@
+document.write("eu sou gay".toUpperCase())

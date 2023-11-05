@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+background: red;
+padding: 150px;
+margin-right: 250px;
+text-align: center;
+color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="area">
+
+
+
+INTERAJA
+</div>
+
+<script>
+    var a = document.getElementById("area")
+    a.addEventListener("click", clicar)
+    a.addEventListener("mouseenter", entrar)
+    a.addEventListener("mouseout", sair)
+
+  function clicar() {
+    a.innerText = 'veja o resultado daqui 9 meses'
+    a.style.background = "black"
+    a.style.color = "white"
+  }
+    function entrar() {
+    a.innerText = 'pau entrou'
+    a.style.background = "rgb(117, 3, 3)"
+  }
+  function sair() {
+a.innerText = 'pau saiu'
+a.style.background = "red"
+
+  }
+
+
+
+
+
+</script>
+    
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+p{
+    background: rgb(240, 0, 0);
+    width: 500px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 7px 10px 12px 2px black;
+    margin: auto;
+    margin-bottom: 50px;
+    animation: float ease-in-out 3s infinite;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: cursive;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translateY(5px);
+    }100%{
+        transform: translateY(0px);
+    }
+
+}
+body{
+background-color: brown;
+}

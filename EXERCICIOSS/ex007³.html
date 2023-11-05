@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPROVEMENT OF DNSHEIK
+    </title>
+</head>
+<body>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n1" id="n2">
+    <input type="button" onclick="somar()" value="button">
+    <div id="res">Resultado</div>
+
+
+<!--- SCRIPT TO DO THE FUNCTIONS OF THE BUTTONS-->
+<script>
+function somar() {
+// DOM PEGANDO OS NUMEROS DO USUARIO
+    let number1 = document.querySelector("input#n1")
+    let resultado = document.getElementById("res")
+    let number2 = document.querySelector("input#n2")
+// ALTERAR NUMEROS VINDO DE HTML COMO STRING PRA NUMBER
+    let numero1 = Number(number1.value)
+    let numero2 = Number(number2.value)
+    let s = numero1 + numero2
+    resultado.innerText = `O RESULTADO DA SOMA E ${s} OS NUMEROS SOMADOS FORAM ${numero1} e ${numero2}`
+}
+
+
+</script>
+
+</body>
+</html>

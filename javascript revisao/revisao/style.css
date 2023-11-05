@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    background: #FF913B;
+}
+h1{
+    color: rgb(241, 241, 241);
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+}
+h1#titulo{
+    background: #FF4D3B;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+div#base{
+    display: flex;
+    justify-content: space-around;
+    background: #FF4D3B;
+    border-radius: 15px;
+    border-style: solid;
+    border-color:#FFB23B;
+    border-width: 5px;
+}
+div#txt1{
+    width: 250px;
+    height: 250px;
+
+}
+div#txt2{
+    height: 250px;
+    width: 250px;
+
+}

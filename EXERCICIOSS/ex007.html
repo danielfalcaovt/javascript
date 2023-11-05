@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMANDO NUMEROS</title>
+    <style>
+        #base{
+            background-color: black;
+padding-bottom: 250px;
+position: relative;
+
+        }
+        input, label{
+            color: white;
+        }
+        txtn2{
+            display:inline-block;
+        }
+        input{
+background: red;
+
+        }
+        ::placeholder{
+            color: white;
+        }
+h1{
+    color: black;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+#txtn2{
+
+    margin-top: 10px;
+}
+        #title{
+            background: rgb(255, 0, 0);
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-color: black;
+            border-style: solid;
+            border: 5px;
+        }
+       #res{
+            color:white;
+            font-size: 25pt;
+            background: red;
+            position: absolute;
+            bottom: 125px;
+            left:125px;
+        }
+        #button{
+
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="base">
+        <div id="title">
+    <h1>SOMANDO VALORES COM DNSHEIK</h1>
+        </div>
+        <div id="input1">
+            <label for="txtn1">INSIRA O 1° VALOR AQUI</label>
+            
+    <input placeholder="insira o valor aqui..." type="number" name="txtn1" id="txtn1"> +
+        </div>
+        <div id="input2">
+            <label for="txtn2">INSIRA O 2° VALOR AQUI</label>
+    <input placeholder="insira o valor aqui..." type="number" name="txtn2" id="txtn2">
+        </div> 
+    <input type="button" value="somar" id="button" onclick="somar()">
+    
+    <div id="res">Resultado</div>
+</div>
+<script>
+
+function somar() {
+    var tn1 = document.querySelector("input#txtn1")
+    var tn2 = document.querySelector("input#txtn2")
+    var res = document.querySelector("div#res")
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+    var s = n1 + n2
+    res.innerText = `O RESULTADO DA SOMA : ${s}`
+
+
+
+}
+
+
+</script>
+</body>
+</html>

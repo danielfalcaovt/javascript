@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DIV HEAD-->
+    <div id='bd'>
+        <div id="head">
+            <!--- INFORMACOES-->
+            <h1>HORA DO DIA</h1>
+            <div>
+                <div id="hr">Hora</div>
+                <img id="img" src="" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var agora = new Date()
+        var foto = document.querySelector("img#im")
+        hora = agora.getHours()
+        var res = document.querySelector("div#hr")
+        var corpo = document.querySelector("body")
+        res.innerHTML = `Agora sao:${hora} Horas`
+    if (hora < 12) {
+        corpo.style.backgroundColor = "yellow"
+        img.src = "/fotos-exemplo/Maha.jpg"
+    }else if (hora >= 12) {
+        corpo.style.backgroundColor = "#ffa500"
+        img.src = "/fotos-exemplo/tardinha.jpg"
+    }else {
+        corpo.style.backgroundColor = "purple"
+        img.src = "/fotos-exemplo/noite.jpg"
+    }
+    </script>
+</body>
+</html>
