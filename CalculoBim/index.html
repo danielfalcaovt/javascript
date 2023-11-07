@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Media Bimestral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Identificador de Aluno</h1>
+        <div id="carteirinha">
+            <p id="aln">Aluno:</p>
+            <p id="idd">Idade:</p>
+            <p id="ane">Ano escolar:</p>
+        </div>
+        <div id="aluno">
+            <div id="alunonome">
+                <label for="name"><p>ALUNO:</p></label>
+                <input type="text" name="name" id="name" placeholder="Escreva seu nome...">
+            </div>
+            <div id="alunoidade">
+                <label for="yold"><p>IDADE:</p></label>
+                <input type="number" name="yold" id="yold" placeholder="Escreva sua idade...">
+            </div>
+         </div>
+    </header>
+    <main>
+    
+    <article>
+        <div id="divano">
+            <input type="radio" name="anoescolar" id="ano1" value="1"><label for="ano1">1° ANO DO ENSINO MEDIO</label>
+            <input type="radio" name="anoescolar" id="ano2" value="2"><label for="ano2">2° ANO DO ENSINO MEDIO</label>
+            <input type="radio" name="anoescolar" id="ano3" value="3"><label for="ano3">3° ANO DO ENSINO MEDIO</label>
+        </div>
+    </article>
+    <div id="line"></div>
+        <article>
+         
+                
+                    <h2>CALCULO DE MEDIA BIMESTRAL</h2>
+
+                <input type="number" name="note1" id="note1" placeholder="1° bim.">
+                <input type="number" name="note2" id="note2" placeholder="2° bim.">
+                <input type="number" name="note3" id="note3" placeholder="3° bim.">
+                <input type="number" name="note4" id="note4" placeholder="4° bim.">
+            </div>
+            <div id="botao">
+                <input type="button" value="enviar" onclick = "calcular()">
+                <div id="res">RESULTADO:</div>
+            </div>
+            <script src="script.js"></script>
+        </article>
+</main>
+</body>
+</html>

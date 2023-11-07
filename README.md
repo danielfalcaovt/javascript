@@ -7,3 +7,4 @@ Repositorio De JavaScript
 <a href="aula12ex\PENULTIMO-EXERCICIO\ex001¹.html">Analisador de Números</a>
 <a href="EXERCICIOSS\ex010.html">Exercicio 10</a>
 <a href="EXERCICIOSS\ex011.html">Exercicio 11</a>
+<a href ="CalculoBim/index.html">Projeto: Calculo Bimestral</a>

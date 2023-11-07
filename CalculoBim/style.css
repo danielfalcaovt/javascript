@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "SFPRO";
+    src: url(fonts/SFPRODISPLAYREGULAR.OTF)format("opentype"),url(fonts/SFPRODISPLAYBOLD.OTF)format("opentype");
+}
+/*
+ATENÇAO SITE NAO RESPONSIVO! APENAS PARA DISPOSITIVOS
+DESKTOP!
+*/
+:root{
+    --verdep:#147820 ;
+    --verdec:#7EDE8A;
+    --verdef: #19451F;
+    --amarelo: #785D14;
+
+}
+
+    /*#785D14 AMARELO
+    #19451F VERDINHO
+    ##147820 VERDE PRINCIPAL
+    ##7EDE8A VERDE CLARO
+    */
+body{
+    margin: 0px;
+    color: black ;
+    font-family: SFPRO, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom,var(--verdef),var(--verdep)  );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+}
+#carteirinha{
+    background:white ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.199);
+    min-width: 200px;
+    max-width: 350px;
+    margin: auto;
+}
+header{
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.226);
+    padding-bottom: 20px;
+    background: var(--verdec);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+div#aluno{
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+div#aluno > #alunonome{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+div#aluno >#alunoidade{
+    display: flex;
+    justify-content: center;
+}
+div#aluno p{
+    margin: 0px;
+    align-self: flex-start;
+}
+header>h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.158)
+}
+header>#carteirinha{
+    height: 120px;
+    margin-bottom: 10px;
+}
+main{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    background: var(--amarelo);
+    box-shadow: inset 0px 0px 5px 0px;
+    margin: 0px;
+    margin-top: 20px;
+    min-height: 200px;
+    flex-wrap: wrap;
+    max-height: 850px;
+}
+article{
+    margin: 10px 0px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+article h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+div#divano{
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    align-items: center;
+    height: 150px;
+    background: var(--verdef);
+    border-radius: 10px;
+    box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.226);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.158)
+}
+div#res{
+    background: white;
+    margin-top: 5px;
+    width: 250px;
+    height: 85px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.226); ;
+}
+div#res>p{
+    margin: 0px;
+    font-weight: 600;
+}
+div#res:hover{
+    background: rgb(231, 231, 231);
+}
+div#botao{
+    display: flex;
+     min-width:300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}  
+div#botao>input{
+    border-radius: 5px; 
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.226);
+    color: black;
+    background: var(--verdec);  
+    padding: 20px;
+    text-align: center;
+    
+}
+div#botao>input:hover{
+    text-decoration: underline;
+}
+div#line{
+    background: black;
+    padding: 1px;
+}
