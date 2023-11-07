@@ -1,7 +1,8 @@
+
 //NEW DATE HORARIO ATUAL
 var agora = new Date()
 //CONECTAR A FOTO NO HTML
-var foto = document.querySelector("img#im")
+let foto = document.querySelector("img#im")
 //PEGAR HORARIO DO NEWDATE
 hora = agora.getHours()
 
@@ -11,11 +12,11 @@ var corpo = document.querySelector("body")
 res.innerHTML = `Agora são: ${hora} Horas`
 if (hora < 12) {
     corpo.style.backgroundColor = "yellow"
-    foto.src = "/fotos-exemplo/Maha.jpg"
+    foto.src = "/aula12ex/fotosex/Maha.jpg"
 }else if (hora >= 17) {
     corpo.style.backgroundColor = "purple"
-    foto.src = "/fotos-exemplo/noite.jpg"
+    foto.src = "/aula12ex/fotosex/noite.jpg"
 }else if (hora >= 12) {
     corpo.style.backgroundColor = "#ffa500"
-    foto.src = "/fotos-exemplo/tardinha.jpg"
+    foto.src = "/aula12ex/fotosex/tardinha.jpg"
 }
